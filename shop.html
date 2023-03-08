@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#49335f" />
+    <meta
+      name="description"
+      content="Shop fresh, organic produce from our family farm. Shop our online store for the best selection of fruits and vegetables."
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/img/Strawberry_Hedgehog_logo.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/a8070db42a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer type="module" src="/components/header.js"></script>
+    <script defer type="module" src="/components/footer.js"></script>
+    <script defer type="module" src="/js/shop.js"></script>
+    <!-- <base href="/shop.html" target="_blank" /> -->
+    <title>Shop</title>
+  </head>
+  <body>
+    <header-component></header-component>
+    <main class="shop--main">
+      <section class="hero-container">
+        <img
+          class="hero-image donate-hero--darken"
+          src="/img/shop-heroImage.webp"
+          alt=""
+        />
+        <div class="hero-textbox shop__hero-textbox">
+          <div class="hero-text">Shop</div>
+        </div>
+      </section>
+      <section class="shop__items--nav-wrapper">
+        <div class="shop__items--navbar">
+          <a
+            id="vegetables"
+            class="shop__items--navbar-links"
+            href="#vegetables"
+          >
+            <span>Vegetables</span>
+          </a>
+          <a id="fruit" class="shop__items--navbar-links" href="#fruit">
+            <span>Fruit</span>
+          </a>
+          <a class="shop__items--navbar-links" id="mixed-boxes">
+            <span>Mixed Boxes</span>
+          </a>
+          <a class="shop__items--navbar-links" id="conserves">
+            <span>Conserves</span>
+          </a>
+
+          <a class="shop__items--navbar-links" id="ferments">
+            <span>Ferments</span>
+          </a>
+          <a class="shop__items--navbar-links" id="seeds">
+            <span>Seeds</span>
+          </a>
+          <a class="shop__items--navbar-links" id="tools">
+            <span>Hardware</span>
+          </a>
+          <a class="shop__items--navbar-links" id="soils-and-fertiliser">
+            <span>Soils and Fertiliser</span>
+          </a>
+        </div>
+      </section>
+      <div class="shop__products--grid" id="shop__products--grid">
+        <!-- <div class="shop__product" id="shop__product">
+          <figure>
+            <div class="shop__product--img-wrapper">
+              <img class="shop__product--img" src="/img/veg-broc.jpeg" alt="" />
+            </div>
+          </figure>
+          <div class="shop__product--title">
+            <p>Brocolli, 750 KG</p>
+          </div>
+          <div class="shop__product--price">
+            <p>€5.00</p>
+          </div>
+          <div class="shop__product--add-cart">
+            <i class="fa-solid fa-cart-shopping icon"></i>
+            <p>Add to cart</p>
+          </div>
+        </div> -->
+      </div>
+      <section id="shop-item--section"></section>
+    </main>
+
+    <footer-component></footer-component>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/img/Strawberry_Hedgehog_logo.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/a8070db42a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer type="module" src="/components/header.js"></script>
+    <script defer src="/components/footer.js"></script>
+    <title>Contact</title>
+  </head>
+  <body>
+    <header-component></header-component>
+    <main>
+      <section>
+        <div class="hero-container">
+          <img
+            class="hero-image hero-image__contact"
+            src="/img/contact-us.webp"
+            alt="siloheutte of some of our team facing the sunset with a mountainous background"
+          />
+          <div class="hero-textbox">
+            <div class="hero-text">Contact</div>
+          </div>
+        </div>
+      </section>
+      <div class="contact-page--container">
+        <div class="header-container">
+          <p>
+            Strawberry Hedgehog Organic Farm is a unique working farm experience
+            and provides a great location for many different occasions from
+            birthdays to school tours and an excellent day out for all the
+            family. Whether to book a tour, meet our furry/feathery farm
+            friends, or queries regarding orders/shipment, contact us by
+            submitting the enquiry form below, or pop us an email or a
+            phone-call. We'd love to hear from you.
+          </p>
+          <span>- 'Team SH'</span>
+        </div>
+
+        <div class="contact-form--container">
+          <form class="contact-form" action="#" method="#">
+            <div class="contact-form--item contact-form--name">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+            <div class="contact-form--item contact-form--location">
+              <label for="location">Location (town, county)</label>
+              <input
+                id="location"
+                name="location"
+                type="text"
+                placeholder="Town, County"
+                required
+              />
+            </div>
+            <div class="contact-form--item contact-form--phone">
+              <label for="phone">Phone number (optional)</label>
+              <input type="number" name="phone" id="phone" />
+            </div>
+            <div class="contact-form--item contact-form--email">
+              <label for="email">Email </label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div class="contact-form--item contact-form--topic">
+              <label for="topic">Topic of contact</label>
+              <select name="topic" id="topic" required>
+                <option disabled hidden>Subject of enquiry</option>
+                <option value="General">General</option>
+                <option value="Online order">Online order</option>
+                <option value="Petting zoo and tours">
+                  Petting zoo and farm tours
+                </option>
+                <option value="Courses and events">Courses and events</option>
+                <option value="Volunteering">Volunteering</option>
+                <option value="Donations">Donations</option>
+              </select>
+            </div>
+            <div class="contact-form--item contact-form--message">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
+            </div>
+            <div
+              class="contact-form--item contact-form--checkbox contact-form--checkbox--one"
+            >
+              <input type="checkbox" name="checkbox" id="checkbox" />
+              <label for="checkbox">Tick the box for our newsletter</label>
+            </div>
+            <div
+              class="contact-form--item contact-form--checkbox contact-form--checkbox--two"
+            >
+              <input type="checkbox" name="consent" id="consent" />
+              <label for="consent">
+                I consent to Strawberry Hedgehog Organics using this data to
+                contact me.</label
+              >
+            </div>
+            <div class="contact-form--item contact-form--disclm">
+              <p>
+                Disclaimer: Your name and email will only be used to communicate
+                and provide assistance to you. For further info on how we
+                protect and manage your submitted data, please see our
+                <a href="/" class="link">Privacy Policy</a>
+              </p>
+            </div>
+            <div class="contact-form--item contact-form--submit">
+              <button type="submit" class="contact-input--btn btn">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="opening-times--container">
+          <h2>Business hours</h2>
+          <div class="opn-times">
+            <h4>Office, orders, and dispatch</h4>
+            <p>Monday - Saturday</p>
+            <p>09:00 -16:00</p>
+            <p>Phone: +353 91 123456</p>
+          </div>
+
+          <div class="opn-times">
+            <h3>*Tours, Courses and Events</h3>
+            <p>Monday - Sunday</p>
+            <p>(*based on activity, availability, and demand)</p>
+            <p>09:00 - 16:00</p>
+            <p>Phone: +353 91 654321</p>
+          </div>
+          <p>General enquiries, phone: +353 91 123123</p>
+        </div>
+
+        <div class="contact-page--map-container">
+          <h2>Our location</h2>
+          <div class="google-map">
+            <iframe
+              class="contact-page--google-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4779.819975548389!2d-8.6657451515222!3d53.201530489889635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b877500b00343%3A0x2600c7a7bb4e4602!2sCarrowclogh%2C%20Co.%20Galway!5e0!3m2!1sen!2sie!4v1654100688202!5m2!1sen!2sie"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="map of area around strawberry hedgehog organics"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer-component></footer-component>
+  </body>
+</html>

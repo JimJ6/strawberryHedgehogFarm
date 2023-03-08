@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/img/Strawberry_Hedgehog_logo.png"
+    />
+
+    <script defer src="/js/checkout.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a8070db42a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer type="module" src="/components/header.js"></script>
+    <script defer src="/components/footer.js"></script>
+    <title>Checkout</title>
+  </head>
+  <body>
+    <header-component></header-component>
+    <main class="checkout--main">
+      <div class="checkout_info--container">
+        <div class="checkout--header-wrapper">
+          <h1>Checkout</h1>
+        </div>
+        <!-- login -->
+        <div class="checkout--log-in checkout-box">
+          <h2 class="checkout_login--header checkout--headers">
+            <i class="fa-solid fa-right-to-bracket icon"></i>
+            Login
+          </h2>
+          <form class="checkout_login--form" action="#">
+            <div class="checkout-login--email checkout_login-item">
+              <label for="co-email">Email</label>
+              <input
+                class="checkout_login--inputs"
+                type="email"
+                id="co-email"
+                autocomplete="username"
+              />
+            </div>
+            <div class="checkout-login--password checkout_login-item">
+              <label for="co-password">Password</label>
+              <div class="checkout_login--pw-and-btn">
+                <input
+                  class="checkout_login--inputs checkout_login-item--pw"
+                  type="password"
+                  id="co-password"
+                  autocomplete="current-password"
+                />
+                <button type="submit" class="checkout_login-submit btn">
+                  Login
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <span class="checkout--or"><p>~ OR ~</p></span>
+        <!-- delivery/billing details -->
+        <form>
+          <div class="checkout_form" action="#">
+            <section class="checkout_billing-info--wrapper">
+              <h2 class="checkout_billing-info--header checkout--headers">
+                <i class="fa-solid fa-user icon"></i> Account and billing info
+              </h2>
+              <div class="user_fname checkout_billing--div">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" required />
+              </div>
+              <div class="user_lname checkout_billing--div">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" />
+              </div>
+              <div class="user_email checkout_billing--div">
+                <label for="details-email">Email</label>
+                <input
+                  type="email"
+                  id="details-email"
+                  autocomplete="username"
+                />
+              </div>
+              <div class="user_telephone checkout_billing--div">
+                <label for="telephone">Telephone</label>
+                <input type="tel" id="telephone" />
+              </div>
+              <div class="user_address--line-1 checkout_billing--div">
+                <label for="address1">Address 1</label>
+                <input type="text" id="address1" />
+              </div>
+              <div class="user_address--line2 checkout_billing--div">
+                <label for="address2">Address 2</label>
+                <input type="text" id="address2" />
+              </div>
+              <div class="user_county checkout_billing--div">
+                <label for="county">County</label>
+                <select type="select" id="county">
+                  <option value>Select a County</option>
+                  <option value="antrim">Antrim</option>
+                  <option value="armagh">Armagh</option>
+                  <option value="carlow">Carlow</option>
+                  <option value="cavan">Cavan</option>
+                  <option value="clare">Clare</option>
+                  <option value="cork">Cork</option>
+                  <option value="derry">Derry</option>
+                  <option value="donegal">Donegal</option>
+                  <option value="down">Down</option>
+                  <option value="dublin">Dublin</option>
+                  <option value="fermanagh">Fermanagh</option>
+                  <option value="galway">Galway</option>
+                  <option value="kerry">Kerry</option>
+                  <option value="kildare">Kildare</option>
+                  <option value="kilkenny">Kilkenny</option>
+                  <option value="laois">Laois</option>
+                  <option value="leitrim">Leitrim</option>
+                  <option value="limerick">Limerick</option>
+                  <option value="longford">Longford</option>
+                  <option value="louth">Louth</option>
+                  <option value="mayo">Mayo</option>
+                  <option value="meath">Meath</option>
+                  <option value="monaghan">Monaghan</option>
+                  <option value="offaly">Offaly</option>
+                  <option value="roscommon">Roscommon</option>
+                  <option value="sligo">Sligo</option>
+                  <option value="tipperary">Tipperary</option>
+                  <option value="tyrone">Tyrone</option>
+                  <option value="waterford">Waterford</option>
+                  <option value="westmeath">Westmeath</option>
+                  <option value="wexford">Wexford</option>
+                  <option value="wicklow">Wicklow</option>
+                </select>
+              </div>
+              <div class="user_eircode checkout_billing--div">
+                <label for="eircode">Eircode</label>
+                <input type="text" id="eircode" />
+              </div>
+              <div class="default-address checkout_billing--div">
+                <span>Default Address</span>
+                <label for="yes"
+                  ><input
+                    type="radio"
+                    id="default-address--no"
+                    name="default-address"
+                    value="1"
+                  />
+                  Yes</label
+                >
+                <label for="yes"
+                  ><input
+                    type="radio"
+                    id="default-address--yes"
+                    name="default-address"
+                    value="0"
+                  />
+                  No</label
+                >
+              </div>
+              <div class="checkout_login--password checkout_billing--div">
+                <label for="co-info--pw">Password</label>
+                <input
+                  type="password"
+                  id="co-info--pw"
+                  autocomplete="new-password"
+                />
+              </div>
+              <div
+                class="checkout_login--password-confirm checkout_billing--div"
+              >
+                <label for="co-info--pw-confirm">Confirm-Password</label>
+                <input
+                  type="password"
+                  id="co-info--pw-confirm"
+                  autocomplete="new-password"
+                />
+              </div>
+              <div class="checkout_login--same-address checkout_billing--div">
+                <span>
+                  <input
+                    type="checkbox"
+                    id="same-address"
+                    name="same-address"
+                    checked
+                  />
+                </span>
+                <label for="same-address checkout_billing--div"
+                  >My delivery and billing addresses are the same.
+                </label>
+              </div>
+            </section>
+            <div class="checkout_col-two">
+              <!-- DELIVERY METHOD -->
+              <div class="checkout_delivery-method">
+                <h3 class="checkout--headers">
+                  <i class="fa-solid fa-truck icon"></i>Delivery Method
+                </h3>
+                <div class="delivery-method--delivery">
+                  <h4 class="checkout_delivery-method--headers">
+                    National delivery
+                  </h4>
+                  <div class="checkout_methods--content">
+                    <input
+                      class="delivery-methods--radio-btn"
+                      type="radio"
+                      id="nationwide"
+                      name="delivery-method"
+                      value="1"
+                      checked
+                    />
+                    <label for="nationwide">Nationwide delivery</label>
+                  </div>
+                </div>
+                <div class="delivery-method--collect">
+                  <h4 class="checkout_delivery-method--headers">Pickup</h4>
+                  <div class="checkout_methods--content">
+                    <input
+                      class="delivery-methods--radio-btn"
+                      type="radio"
+                      id="collection"
+                      name="delivery-method"
+                      value="0"
+                    />
+                    <label class="checkout_delivery--label" for="collection"
+                      >Farm Gate Collection</label
+                    >
+                  </div>
+                  <!-- or collection -->
+                  <div class="checkout_delivery-collection--info">
+                    <h4>*Farm Gate Collection:</h4>
+                    <span>Please note Farm collection times are...</span>
+                    <span>Monday - Friday: 12:00 -17:00</span>
+                    <span>Saturday: 9:00-14:30</span>
+                    <span
+                      >*Your order will usually be ready for collection within
+                      24hrs, we will notify you by email, and SMS.</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- CHECKOUT PAYMENT METHOD -->
+              <div class="checkout_payment-method--wrapper">
+                <div class="checkout_payment-method">
+                  <h3 class="checkout--headers">
+                    <i class="fa-solid fa-credit-card icon"></i>Payment Method
+                  </h3>
+                  <div class="checkout_methods--content">
+                    <input type="radio" id="payment" checked />
+                    <label for="payment">Credit/Debit Card via Stripe</label>
+                  </div>
+                </div>
+                <div class="checkout_comment">
+                  <label for="comment"></label>
+                  <textarea type="text" id="comment"> </textarea>
+                </div>
+              </div>
+            </div>
+            <!-- </form> -->
+            <!-- CHECKOUT SUMMARY -->
+            <section class="checkout-summary">
+              <table class="checkout-summary--table">
+                <thead>
+                  <tr class="checkout_summary--table-headers">
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Quantity</td>
+                    <td class="checkout_summary--price-header">Price</td>
+                    <td class="checkout_summary--total-header">Total</td>
+                  </tr>
+                </thead>
+                <tbody id="checkout-summary--body">
+                  <!-- <tr>
+                  <td class="checkout_image-td">
+                    <div class="checkout-image">
+                      <img src="/img/dummy-carrots.jpg" alt="" />
+                    </div>
+                  </td>
+                  <td class="checkout--product-name">product</td>
+                  <td class="checkout-quantity">Quantity</td>
+                  <td class="checkout-price text-right">Price</td>
+                  <td class="checkout_item-total text-right">€20.00</td>
+                </tr> -->
+                  <tr class="checkout_summary-sub-total--row">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="text-right">
+                      <span>Sub-Total:</span>
+                    </td>
+                    <td class="summary_sub-total text-right">€20.00</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="checkout--delivery-or-collect text-right">
+                      <span class="checkout--delivery-or-collect">
+                        Delivery:</span
+                      >
+                    </td>
+                    <td class="delivery-or-collect--fee text-right">€8.50</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="text-right">
+                      <div class="checkout--total">Total:</div>
+                    </td>
+                    <td class="checkout--total--fee text-right">€20.00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <section class="checkout-continue-btn--wrapper">
+                <span>
+                  <label class="checkout-terms--label" for="terms"
+                    >I have read and agree to the
+                    <a class="checkout-terms--link" href=""
+                      >Terms & Conditions</a
+                    ></label
+                  >
+                  <input type="checkbox" id="terms" />
+                </span>
+                <button class="checkout-continue--btn btn">Continue</button>
+              </section>
+            </section>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>

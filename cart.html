@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/img/Strawberry_Hedgehog_logo.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/a8070db42a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer type="module" src="/components/header.js"></script>
+    <script defer type="module" src="/components/footer.js"></script>
+    <script defer type="module" src="/js/cart.js"></script>
+    <title>Cart</title>
+  </head>
+  <body>
+    <header-component></header-component>
+    <main class="cart--main">
+      <span class="cart--heading-wrapper">
+        <h1 class="cart--heading">Your shopping cart</h1>
+      </span>
+      <section id="cart--container">
+        <div class="cart--section-headings">
+          <h4 class="cart-h--img">Image</h4>
+          <h4 class="cart-h--product">Product</h4>
+          <h4 class="cart-h--description">Description</h4>
+          <h4 class="cart-h--price">Price</h4>
+          <h4 class="cart-h--quantity">Quantity</h4>
+          <h4 class="cart-h--total">Total</h4>
+          <h4 class="cart-h--remove">Remove</h4>
+        </div>
+        <div class="cart-items--container"></div>
+        <div class="cart__checkout">
+          <div class="cart--subtotal">
+            <p>Subtotal:</p>
+            <p class="cart--subtotal-value"></p>
+          </div>
+          <div class="cart--error-msg hidden">
+            <!-- <div class="donation--error"> -->
+            Your cart is empty, visit our
+            <a class="cart--error-msg__link" href="/shop.html">Shop</a> to stock
+            up!
+          </div>
+          <button class="cart__checkout--btn btn">Checkout</button>
+        </div>
+      </section>
+
+      <!-- MODAL -->
+      <div class="modal-background--dark-overlay hidden close-modal"></div>
+      <section class="modal hidden">
+        <!-- <section class="modal"> -->
+        <div class="modal--close-btn close-modal">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <h2 class="modal--prompt-amount">Your cart items come to € X</h2>
+        <figure class="modal-img--container">
+          <img
+            src="/img/modal-image.jpg"
+            alt="icon of a hedgehog"
+            class="donate-modal-img"
+          />
+        </figure>
+        <div class="modal--prompt">
+          <span>Proceed to payment?</span>
+        </div>
+        <div class="modal--buttons">
+          <button class="btn modal-btn modal-btn--cancel close-modal">
+            Cancel
+          </button>
+          <button class="btn modal-btn modal-btn--continue">Continue</button>
+        </div>
+      </section>
+    </main>
+
+    <footer-component></footer-component>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/img/Strawberry_Hedgehog_logo.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/a8070db42a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer type="module" src="/components/header.js"></script>
+    <script defer src="/components/footer.js"></script>
+    <script defer type="module" src="/js/shop-item.js"></script>
+    <title>Shop-item</title>
+  </head>
+  <body>
+    <header-component></header-component>
+    <main>
+      <section class="hero-container">
+        <img
+          class="hero-image donate-hero--darken"
+          src="/img/shop-heroImage.webp"
+          alt=""
+        />
+        <div class="hero-textbox">
+          <div class="hero-text">Shop</div>
+        </div>
+      </section>
+      <section>
+        <div class="shop__items--nav-wrapper">
+          <ul class="shop__items--navbar">
+            <a
+              id="vegetables"
+              class="shop__items--navbar-links"
+              href="#vegetables"
+            >
+              <li>Vegetables</li>
+            </a>
+            <a id="fruit" class="shop__items--navbar-links">
+              <li>Fruit</li>
+            </a>
+            <a class="shop__items--navbar-links" id="mixed-boxes">
+              <li>Mixed Boxes</li>
+            </a>
+            <a class="shop__items--navbar-links" id="conserves">
+              <li>Conserves</li>
+            </a>
+
+            <a class="shop__items--navbar-links" id="ferments">
+              <li>Ferments</li>
+            </a>
+            <a class="shop__items--navbar-links" id="seeds">
+              <li>Seeds</li>
+            </a>
+            <a class="shop__items--navbar-links" id="tools">
+              <li>Hardware</li>
+            </a>
+            <a class="shop__items--navbar-links" id="soils-and-fertiliser">
+              <li>Soils and Fertiliser</li>
+            </a>
+          </ul>
+        </div>
+      </section>
+
+      <section id="shop-item--section">
+        <!-- <figure id="shop-item--image">
+          <img src="/img/veg-broc.jpeg" alt="" />
+        </figure>
+        <div class="shop-item--details text-container">
+          <h3 class="shop__product--title">Broccolli, 225g</h3>
+
+          <p class="shop-item--description">
+            Our organic raw broccoli contains almost 90% water, 7% carbs, 3%
+            protein, and almost no fat. Broccoli is very low in calories,
+            providing only 31 calories per cup (91 grams).
+          </p>
+
+          <div class="shop-item--quant-price">
+            <div class="shop-item--quantity">
+              <button
+                class="shop-item__quant--minus-btn"
+                type="button"
+                name="button"
+              >
+                <i class="fa fa-minus" aria-hidden="true"></i>
+              </button>
+              <input
+                class="shop-item--quantity_input"
+                type="text"
+                name="name"
+                value="1"
+              />
+              <button
+                class="shop-item__quant--plus-btn"
+                type="button"
+                name="button"
+              >
+                <i class="fa fa-plus" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="shop-item--price_tag">
+              <span
+                class="shop__product--price shop-item--total_price"
+                value="2.50"
+                itemprop="price"
+              >
+                €2.50
+              </span>
+            </div>
+          </div>
+
+          <div class="shop__product--add-cart shop-item--add-cart">
+            <i class="fa-solid fa-cart-shopping icon"></i>
+            <p>Add to cart</p>
+          </div>
+        </div> -->
+      </section>
+
+      <!-- <div class="shop__products--grid" id="shop__products--grid"> -->
+      <!-- <div class="shop__product" id="shop__product">
+          <figure>
+            <div class="shop__product--img-wrapper">
+              <img class="shop__product--img" src="/img/veg-broc.jpeg" alt="" />
+            </div>
+          </figure>
+          <div class="shop__product--title"><p>Brocolli, 750 KG</p></div>
+          <div class="shop__product--price">
+            <p>€5.00</p>
+          </div>
+          <div class="shop__product--add-cart">
+            <i class="fa-solid fa-cart-shopping icon"></i>
+            <p>Add to cart</p>
+          </div>
+        </div> -->
+      <!-- </div> -->
+    </main>
+
+    <footer-component></footer-component>
+  </body>
+</html>

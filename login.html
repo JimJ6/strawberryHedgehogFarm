@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/img/Strawberry_Hedgehog_logo.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/a8070db42a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer type="module" src="/js/login.js"></script>
+    <script defer type="module" src="/components/header.js"></script>
+    <script defer src="/components/footer.js"></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <header-component></header-component>
+
+    <main class="login-main">
+      <!-- Log in  -->
+      <div class="login--container">
+        <div class="login_form--container">
+          <div class="login__h2--container">
+            <h2>Login</h2>
+          </div>
+          <!-- FORM -->
+          <form class="login__form" action="">
+            <div class="login__form--inputs">
+              <label for="login_email">Your Email</label>
+              <input type="text" id="login_email" placeholder="Email" />
+            </div>
+            <div class="login__form--inputs">
+              <label for="password"
+                >Password (8 characters minimum, must include digit, uppercase
+                and lowercase)</label
+              >
+              <input
+                class="log--password-input"
+                id="login_password"
+                type="password"
+                minlength="8"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                autocomplete="on"
+                placeholder="Password"
+                required
+              />
+              <i
+                id="loggg-icon"
+                class="fa-regular fa-eye-slash eye-slash toggle-password--log"
+              ></i>
+            </div>
+            <button
+              type="submit"
+              id="login--btn"
+              class="login__form--login-btn btn"
+            >
+              Log in
+            </button>
+          </form>
+          <span class="login--reg-link--container"
+            >Not a member? Why not
+            <span class="login--reg-link" href="">register</span>?
+          </span>
+        </div>
+      </div>
+
+      <!-- Registration  -->
+      <div class="reg--container">
+        <div class="reg_form--container">
+          <div class="reg__h2--container">
+            <h2>Register your account</h2>
+          </div>
+          <!-- FORM -->
+          <form class="reg__form" action="">
+            <div class="reg--names">
+              <div class="reg__form--inputs">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" placeholder="Name" required />
+              </div>
+
+              <div class="reg__form--inputs">
+                <label for="lastname">Last Name</label>
+                <input
+                  type="text"
+                  id="lastname"
+                  placeholder="Surname"
+                  required
+                />
+              </div>
+            </div>
+            <div class="reg__form--inputs">
+              <label for="reg_email">Email</label>
+              <input type="email" id="reg_email" placeholder="Email" required />
+            </div>
+            <div class="reg__form--inputs reg__pw-input">
+              <label for="password"
+                >Password (8 characters min, 1 uppercase, 1 digit min)</label
+              >
+              <input
+                class="reg--password-input"
+                type="password"
+                minlength="8"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                autocomplete="on"
+                placeholder="Password"
+                required
+              />
+              <i
+                id="reggg-icon"
+                class="fa-regular fa-eye-slash eye-slash toggle-password--reg"
+              ></i>
+            </div>
+            <button
+              type="submit"
+              id="reg--submit"
+              class="reg__form--login-btn btn"
+            >
+              Register
+            </button>
+          </form>
+          <span class="reg--login-link--container"
+            >Already a member?
+            <span class="reg--login-link" href="">Login</span>!
+          </span>
+        </div>
+      </div>
+    </main>
+
+    <footer-component></footer-component>
+  </body>
+</html>

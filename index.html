@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/img/Strawberry_Hedgehog_logo.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/a8070db42a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer type="module" src="/components/header.js"></script>
+    <script defer src="/components/footer.js"></script>
+    <script defer src="/js/index.js"></script>
+    <title>Strawberry Hedgehog Organics Home</title>
+  </head>
+  <body>
+    <header-component></header-component>
+    <main class="home--main">
+      <figure class="home__background-img--wrapper">
+        <img
+          class="home__background-img"
+          src="/img/farmhouse1.webp"
+          alt="farmhouse"
+        />
+      </figure>
+
+      <section class="welcome-section">
+        <div class="welcome-section__title">
+          <span class="welcome-section__intro">Welcome to...</span>
+
+          <h1 class="welcome-section__header">Strawberry Hedgehog</h1>
+          <span class="welcome-section__header--span">- Organics -</span>
+        </div>
+
+        <div class="welcome">
+          <div class="welcome__tab-container">
+            <button
+              class="welcome-btn welcome__tab welcome__tab--1 welcome__tab--active"
+              data-tab="1"
+            >
+              Our Story
+            </button>
+            <button
+              class="welcome-btn welcome__tab welcome__tab--2"
+              data-tab="2"
+            >
+              Store
+            </button>
+            <button
+              class="welcome-btn welcome__tab welcome__tab--3"
+              data-tab="3"
+            >
+              Education
+            </button>
+            <button
+              class="welcome-btn welcome__tab welcome__tab--4"
+              data-tab="4"
+            >
+              Market
+            </button>
+          </div>
+          <div
+            class="welcome__content welcome__content--1 welcome__content--active"
+          >
+            <h5 class="welcome__header">Family run, Organic, Regenerative</h5>
+            <p class="welcome--p">
+              We are a family run organic farm and animal sanctuary that have
+              natures welfare and its inhabitants at heart. Find out more about
+              who we are and what we do in our
+              <a class="welcome--link" href="/about.html">About</a> section.
+            </p>
+          </div>
+
+          <div class="welcome__content welcome__content--2">
+            <h5 class="welcome__header">Fresh produce, seeds, and tools.</h5>
+            <p>
+              We stock fresh fruit, veg, and locally sourced foods, not to
+              mention seeds and hardware to grow your own. We'll be glad to
+              help. Visit our
+              <a class="welcome--link" href="/shop.html">Store</a>!
+            </p>
+          </div>
+          <div class="welcome__content welcome__content--3">
+            <h5 class="welcome__header">Learn something new!</h5>
+            <p>
+              From farm tours, petting zoo, courses on a whole range of
+              subjects, and volunteer programmes, we cater for all ages groups.
+              Have a look at our
+              <a class="welcome--link" href="/education.html">Education</a>
+              section to find out more.
+            </p>
+          </div>
+          <div class="welcome__content welcome__content--4">
+            <h5 class="welcome__header">Find us at local markets!</h5>
+            <p>
+              We love meeting new people, and hearing your stories while
+              providing our fresh organic seasonal produce. Check out the
+              <a class="welcome--link" href="/markets.html">Markets</a> section
+              to see if we're nearby.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/img/Strawberry_Hedgehog_logo.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/a8070db42a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer type="module" src="/components/header.js"></script>
+    <script defer src="/components/footer.js"></script>
+    <script defer src="/js/donate.js"></script>
+    <title>Donate</title>
+  </head>
+  <body>
+    <header-component></header-component>
+    <main>
+      <section>
+        <div class="hero-container">
+          <img
+            class="hero-image donate-hero--image"
+            src="/img/donate-hero.jpeg"
+            alt=""
+          />
+          <div class="hero-textbox">
+            <div class="hero-text">Donate</div>
+          </div>
+        </div>
+      </section>
+      <div class="donate-text__container text-container">
+        <h1>Donations help us care for our animals</h1>
+        <p>
+          Farm animals are among the most abused creatures on earth. Pigs, cows,
+          chickens, turkeys, goats, sheep, and others suffer by the billions,
+          locked away in places that echo with cries of terror and pain, places
+          that reek of cruelty, dark places with unspeakable horrors.
+        </p>
+        <p>
+          You are one of the special people who know that farm animals are
+          individuals who deserve our compassion. Every time you support Farm
+          Sanctuary, you shine the light of your kindness into the lives of
+          these farm animals. You speak up for a better and more compassionate
+          way.
+        </p>
+        <p>
+          All donations are greatly appreciated and go directly towards the
+          upkeep, maintainance and care for our furry and feathery friends.
+        </p>
+        <p>
+          You can donate via <a class="link" href="#">Paypal</a> and
+          <a class="link" href="#">GoFundMe</a> (links below). Although, if you
+          would prefer to donate in person or by mail, please get in touch with
+          us by clicking here (our contact page 🙂).
+        </p>
+        <p>
+          Thank you, it means a lot to everyone here at The Strawberry Hedgehog.
+        </p>
+      </div>
+
+      <!-- Donate form -->
+      <div class="donations-box--wrapper">
+        <form class="donation-amounts--wrapper">
+          <div class="donation-box--description">
+            <p>Choose amount to donate</p>
+          </div>
+          <div class="donation-box--description">
+            <p>Step 1</p>
+          </div>
+          <div class="donate-buttons">
+            <button class="donation-amount" value="20">€ 20</button>
+          </div>
+          <div class="donate-buttons">
+            <button class="donation-amount" value="50">€ 50</button>
+          </div>
+          <div class="donate-buttons">
+            <button class="donation-amount" value="100">€ 100</button>
+          </div>
+          <div class="donate-buttons">
+            <button class="donation-amount" value="250">€ 250</button>
+          </div>
+          <div class="donate--other">
+            <label class="donate_other-currency--symbol" for="amount-other"
+              >€</label
+            >
+            <input
+              class="donate--other-amount"
+              type="number"
+              id="amount-other"
+              placeholder="Other amount"
+            />
+          </div>
+
+          <div class="donation-submit">
+            <a href="#">
+              <button type="submit" class="donation-submit--btn btn">
+                Donate
+              </button>
+            </a>
+          </div>
+          <div class="donate-disclaimer">
+            <p>
+              *Disclaimer. Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Natus voluptatibus iste!
+            </p>
+          </div>
+          <div class="donation--error hidden">
+            Please select a donation amount and click donate to continue!
+          </div>
+        </form>
+      </div>
+
+      <!-- MODAL -->
+      <div class="modal-background--dark-overlay hidden close-modal"></div>
+      <section class="modal hidden">
+        <!-- <section class="modal"> -->
+        <div class="modal--close-btn close-modal">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <h2 class="modal--prompt-amount">You are about to donate €x!</h2>
+        <figure class="modal-img--container">
+          <img
+            src="/img/modal-image.jpg"
+            alt="icon of a hedgehog"
+            class="donate-modal-img"
+          />
+        </figure>
+        <div class="modal--prompt">
+          <span>Do you wish to contine?</span>
+        </div>
+        <div class="modal--buttons">
+          <button class="btn modal-btn modal-btn--cancel close-modal">
+            Cancel
+          </button>
+          <button class="btn modal-btn modal-btn--continue">Continue</button>
+        </div>
+      </section>
+    </main>
+
+    <footer-component></footer-component>
+  </body>
+</html>
