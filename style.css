@@ -1469,6 +1469,7 @@ textarea {
 
 .donation-amount:hover,
 .donate--other-amount:hover {
+  cursor: pointer;
   background-color: rgb(245, 217, 166);
 }
 
